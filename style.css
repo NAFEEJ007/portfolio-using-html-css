@@ -1,0 +1,184 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #4caf50;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #a8edea, #fed6e3);
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tagline {
+  color: #444;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  border-bottom: 3px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ---------- Table ---------- */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.info-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.info-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ---------- style for  ---------- */
+.web-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- style for footer ---------- */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9em;
+}
+
+/* media query for making my web page responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .section {
+    padding: 25px 15px;
+  }
+}
+
+/* for hobbies */
+
+/* ---------- style for table ---------- */
+
+
