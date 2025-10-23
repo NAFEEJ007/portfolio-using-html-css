@@ -125,19 +125,20 @@
   </div>
 
   <!-- JavaScript -->
-  <script>
-    var path = window.location.pathname;
-    var lastModified = document.lastModified;
-    document.getElementById("page-info").innerHTML =
-      "📍 Page: " + path + " | Last Modified: " + lastModified;
+<script> 
+  var lastModified = document.lastModified;
 
-    // Hamburger menu toggle
-    var hamburger = document.getElementById("hamburger");
-    var navLinks = document.getElementById("nav-links");
-    hamburger.onclick = function () {
-      navLinks.classList.toggle("show");
-    };
-  </script>
+  // Set footer or page info
+  document.getElementById("page-info").innerHTML =
+    '📍 Page: <a href="https://nafeej007.github.io/portfolio-using-html-css/" target="_blank">Live Site</a> | Last Modified: ' + lastModified;
+
+  // Hamburger menu toggle
+  var hamburger = document.getElementById("hamburger");
+  var navLinks = document.getElementById("nav-links");
+  hamburger.onclick = function () {
+    navLinks.classList.toggle("show");
+  };
+</script>
 </body>
 
 </html>
